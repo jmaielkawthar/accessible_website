@@ -11,6 +11,9 @@
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
+        <script defer src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script defer src="main.js"></script>
 
     </head>
 
@@ -41,7 +44,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
-
+                            <!-- Dropdown Menu -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -51,10 +68,68 @@
                 </div>
             </nav>
         </header>
+
+        <section>
+            <div class="ce-slider">
+                <div class="">
+                    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/slider4.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>First slide label</h1>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/slider3.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Second slide label</h1>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider6.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Third slide label</h1>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section>
             <div class="ce-hero">
                 <div class="container">
-                    <div class="row g-5 justify-content-between">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                    <div class="row justify-content-between">
                         <div class=" col-lg-6 my-auto">
                             <div class="py-2">
                                 <h1 class="display-1">
@@ -207,21 +282,30 @@
 
                         </div>
                     </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </section>
         <section>
-            <div class="ce-hero">
+            <div class="ce-video">
                 <div class="container">
                     <div class="row g-2 justify-content-center">
                         <div class="col-lg-8">
-                            <h1 class="display-1 text-center">
+                            <h2 class="display-1 text-center">
                                 Accessibilty video
-                            </h1>
-                            <h2 class="text-black-50 text-center">
+                            </h2>
+                            <h3 class="text-black-50 text-center">
                                 Lorem, ipsum dolor.
 
-                            </h2>
+                            </h3>
                             <p class="text-blue-500 text-center">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quos
                                 perferendis
@@ -234,14 +318,247 @@
 
                         <div class="col-lg-8">
                             <video controls>
-                                <source src="mov_bbb.mp4" type="video/mp4">
-                                <source src="mov_bbb.ogg" type="video/ogg">
+                                <source src="video/movie.mp4" type="video/mp4">
                                 Your browser does not support HTML video.
                             </video>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="ce-accordion">
+                <div class="container">
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="display-1 text-center">
+                                Accessibilty accordion
+                            </h2>
+                            <h3 class="text-black-50 text-center">
+                                Lorem, ipsum dolor.
+
+                            </h3>
+                            <p class="text-blue-500 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quos
+                                perferendis
+                                nisi neque nemo illum veritatis dolorum. Est fuga voluptates ut iure ullam aliquam
+                                quas
+                                asperiores ad facilis dignissimos?
+                            </p>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <section>
+            <div class="ce-accordion">
+                <div class="container">
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="display-1 text-center">
+                                Accessibilty alerts
+                            </h2>
+                            <h3 class="text-black-50 text-center">
+                                Lorem, ipsum dolor.
 
+                            </h3>
+                            <p class="text-blue-500 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quos
+                                perferendis
+                                nisi neque nemo illum veritatis dolorum. Est fuga voluptates ut iure ullam aliquam
+                                quas
+                                asperiores ad facilis dignissimos?
+                            </p>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                            </div>
+                            <div id="liveAlertPlaceholder"></div>
+                            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="ce-accordion">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h2 class="display-1 text-center">
+                                Accessibilty cards
+                            </h2>
+                            <h3 class="text-black-50 text-center">
+                                Lorem, ipsum dolor.
+
+                            </h3>
+                            <p class="text-blue-500 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quos
+                                perferendis
+                                nisi neque nemo illum veritatis dolorum. Est fuga voluptates ut iure ullam aliquam
+                                quas
+                                asperiores ad facilis dignissimos?
+                            </p>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img src="img/img1.png" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img src="img/img1.png" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img src="img/img1.png" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="ce-accordion">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="display-1 text-center">
+                                Accessibilty Modal
+                            </h2>
+                            <p class="text-blue-500 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quos
+                                perferendis
+                                nisi neque nemo illum veritatis dolorum. Est fuga voluptates ut iure ullam aliquam
+                                quas
+                                asperiores ad facilis dignissimos?
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, saepe.
+                                            ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
@@ -251,10 +568,10 @@
             <div class="ce-contact">
                 <div class="container">
                     <div class="row g-5 justify-content-between">
-                        <h2 class="mb-3 text-center display-3"> Contact us </h2>
+                        <h2 class="mb-3 text-center display-3"> Accessibilty forms </h2>
                         <div class=" col-lg-6">
                             <figure>
-                                <img src="img/contact-img.png" alt="image contact that show typing on the keybord ">
+                                <img src="img/contactus.png" alt="image contact that show typing on the keybord ">
                             </figure>
                         </div>
                         <div class="col-lg-6">
@@ -290,6 +607,11 @@
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                 </div>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="This top tooltip is themed via CSS variables.">
+                                    Custom tooltip
+                                </button>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
