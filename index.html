@@ -421,7 +421,7 @@
 
 
         <section>
-            <div class="ce-accordion">
+            <div class="ce-alerts">
                 <div class="container">
                     <div class="row g-2 justify-content-center">
                         <div class="col-lg-8">
@@ -452,14 +452,13 @@
                 </div>
             </div>
         </section>
-
         <section>
-            <div class="ce-accordion">
+            <div class="ce-tabs">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-lg-8">
                             <h2 class="display-1 text-center">
-                                Accessibilty cards
+                                Accessibilty tabs
                             </h2>
                             <h3 class="text-black-50 text-center">
                                 Lorem, ipsum dolor.
@@ -474,48 +473,141 @@
                             </p>
 
                         </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="img/img1.png" class="card-img-top" alt="...">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">Home</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                        aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                                        aria-selected="false">Contact</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active mb-2" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <h2 class="my-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolore eum voluptatibus, quas, delectus tenetur nihil vero libero harum blanditiis asperiores eveniet sunt molestias necessitatibus a aliquam repellendus. Voluptatibus, dolor!
+                                        <div class="row">
+                                            <div class="col-lg-4 my-5">
+                                                <div class="card">
+                                                    <img src="img/img1.png" class="card-img-top" alt="...">
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card
+                                                            title and make up
+                                                            the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-5">
+                                                <div class="card">
+                                                    <img src="img/img1.png" class="card-img-top" alt="...">
+
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card
+                                                            title and make up
+                                                            the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-5">
+                                                <div class="card">
+                                                    <img src="img/img1.png" class="card-img-top" alt="...">
+
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card
+                                                            title and make up
+                                                            the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <h2 class="my-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+                                    <p >
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aspernatur
+                                        incidunt
+                                        at nesciunt rem accusantium, saepe eligendi beatae quasi hic in, modi nulla
+                                        neque
+                                        sed? Numquam officia tenetur nulla laboriosam?
+                                    </p>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h2 class="my-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+                                    <p >
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, asperiores?
+                                        Molestias, suscipit.
+                                    </p>
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">And a fifth one</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="img/img1.png" class="card-img-top" alt="...">
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="img/img1.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="ce-accordion">
+            <div class="ce-modal">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -529,34 +621,38 @@
                                 quas
                                 asperiores ad facilis dignissimos?
                             </p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                Launch static backdrop modal
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, saepe.
-                                            ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Understood</button>
+
+                            <div class="d-flex justify-content-center">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Launch static backdrop modal
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, saepe.
+                                                ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Understood</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
 
